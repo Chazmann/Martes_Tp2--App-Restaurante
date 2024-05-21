@@ -241,7 +241,7 @@ main {
                 float: left;
                 height: 100%;
                 width: 45%;
-                background-color: rgb(115, 255, 0);
+               
 
             }
 
@@ -331,13 +331,14 @@ main {
             bottom: 12%;
             right: 12%;
             padding: 10px;
-            background-color: aqua;
+            background-color: aquamarine;
             place-items: center;
             font-size: 16pt;
             color: white;
             font-weight: bolder;
             border-radius: 14px 0 14px 0;
-            box-shadow: 0 0 15px black;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.281);
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.37);
 
         }
 
@@ -480,14 +481,15 @@ h1::after {
 
             .precio_plato {
                 position: absolute;
-                background-color: rgb(2, 224, 224);
+                background-color: aquamarine;
                 color: white;
                 font-weight: bold;
                 padding: 5px 10px;
                 border-radius: 15px 0;
                 right: -15px;
-                bottom: 20px;
-                box-shadow: 0 5px 10px rgba(34, 34, 34, 0.616);
+                bottom: 0px;
+                text-shadow: 0 0 34px black;
+                box-shadow: 0 5px 10px rgba(34, 34, 34, 0.238);
             }
         }
 
@@ -518,7 +520,8 @@ h1::after {
         width: 40px;
         display: grid;
         place-items: center;
-        background-color: aqua;
+        background-color: aquamarine;
+        color: rgb(0, 0, 0);
         border: 0;
         font-size: 18px;
         transition: all 0.3s ease-in-out;
@@ -526,12 +529,14 @@ h1::after {
 
     button:hover{
         box-shadow: 0 2px 0 black;
+        color: black;
         cursor: pointer;
     }
     .btnAgregar {
         border: 0;
         flex: 1;
-        background-color: aqua;
+        background-color: aquamarine;
+        color: rgb(0, 0, 0);
         font-weight: 700;
         display: flex;
         align-items: center;
