@@ -38,3 +38,15 @@ function sumar() {
     alert("No te parece suficiente 15 unidades");
   }
 }
+
+
+let carrito = document.querySelector(".btnAgregar")
+
+carrito.addEventListener("click", function () {
+  console.log("BOTON CARRITO AGREGADO")
+
+}); 
+
+
+
+
