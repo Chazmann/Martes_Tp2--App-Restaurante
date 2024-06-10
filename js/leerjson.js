@@ -1,14 +1,16 @@
-let resto = document.querySelector(".restaurantes")
+let resto = document.querySelector(".restaurantes");
 
-fetch('js/restaurantes.json')
-.then(response => {
-     return response.json()
-    })
-.then(data => {
-      for (let i=0; i < 100; i++){
-       
-         document.querySelector('.restaurantes').innerHTML +=
-         /*html*/`<a class="resto" href="resto1.html">
+fetch("js/restaurantes.json")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    for (let i = 0; i < 2; i++) {
+      
+      document.querySelector(
+        ".restaurantes"
+      ).innerHTML += /*html*/ `<div class="resto" id="${data[i].truck_id}" >
+
 
          <div class="imagen_resto"><img src=${data[i].avatar.src} alt=""></div>
 
@@ -38,9 +40,13 @@ fetch('js/restaurantes.json')
          <div class="puntuacion">${data[i].puntuacion}</div>
          <div class="distancia"> 3KM</div>
 
-     </a>` 
-       
-    }
-})
+     </div>`;
+
+   
+    }  
+  });
+
+let nameActual = document.getElementsById("")
+
 
 
